@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  color: #5c5c5c;
+}
+h1 {
+  font-weight: 400;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.disabled {
+  display: none;
+}
+
+.enabled {
+  display: block;
+}
+
+.shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+}

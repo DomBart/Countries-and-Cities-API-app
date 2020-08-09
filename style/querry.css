@@ -1,0 +1,101 @@
+@media (max-width: 1650px) {
+  .filter-wrap {
+    flex-basis: 35%;
+  }
+}
+@media (max-width: 1250px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .table-container {
+    width: 90%;
+    height: 70rem;
+  }
+  .table-control {
+    flex-direction: column;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+  .search-wrap {
+    width: 100%;
+    margin: auto;
+  }
+  .filter-wrap {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .table-filter {
+    float: none;
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .filter-content {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
+  .filter-content label {
+    font-size: 1.2rem;
+    width: 60%;
+    float: left;
+  }
+  .date-check {
+    flex-basis: 15%;
+  }
+  .date-input {
+    flex-basis: auto;
+  }
+  .pagi-container {
+    margin-top: 1.5rem;
+  }
+
+  .pagi-container button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .nav {
+    padding: 0 10%;
+  }
+
+  .table-container {
+    width: 95%;
+    height: 70rem;
+  }
+
+  .intro {
+    width: 80%;
+  }
+
+  .filter-inputs {
+    justify-content: center;
+  }
+
+  .filter-content label {
+    margin: auto;
+    float: none;
+  }
+
+  .pagi-container {
+    margin-top: 2.5rem;
+  }
+
+  .pagi-container button {
+    font-size: 1.6rem;
+    padding: 0 3px 0 3px;
+  }
+
+  .add-modal,
+  .alert-box,
+  .confirm-box {
+    width: 85%;
+    height: auto;
+  }
+}

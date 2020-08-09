@@ -1,0 +1,270 @@
+.intro {
+  display: flex;
+  width: 60%;
+  padding: 0.5rem;
+  height: auto;
+  margin: 4% auto 2% auto;
+  overflow: hidden;
+}
+
+.intro span {
+  display: inline-flex;
+  flex-basis: 45%;
+  justify-content: start;
+}
+
+.intro button {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-left: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  background-color: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.intro button img {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+  height: auto;
+}
+
+.table-container {
+  display: block;
+  width: 60%;
+  padding: 0.5rem;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.table-control {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  justify-content: flex-start;
+}
+
+.table-control input {
+  font-family: "Oswald", sans-serif;
+  color: #969696;
+  outline: none;
+  border: none;
+}
+
+.search-bar {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem 2rem;
+}
+
+.search-wrap {
+  position: relative;
+  flex-basis: 75%;
+  flex-shrink: 2;
+}
+
+.filter-wrap {
+  position: relative;
+  flex-basis: 22%;
+  flex-grow: 2;
+  width: auto;
+}
+
+.search-icon {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.table-filter {
+  font-size: 1.2rem;
+  color: #969696;
+  width: 80%;
+  height: 100%;
+  float: right;
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-icon {
+  height: 25%;
+  margin-left: 0.5rem;
+  padding-bottom: 2px;
+}
+
+.filter-content {
+  display: none;
+  background-color: #ffffff;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  padding: 0.8rem 0.5rem;
+  width: 80%;
+  float: right;
+  overflow: hidden;
+}
+
+.filter-enabled {
+  display: block;
+}
+
+.filter-content label {
+  display: block;
+  color: #969696;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.filter-inputs {
+  display: flex;
+}
+
+.date-check {
+  position: relative;
+  height: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-basis: 20%;
+}
+
+.date-input {
+  text-align: right;
+  flex-basis: 80%;
+  font-size: 1rem;
+  right: 0;
+}
+
+.table-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.table-wrap table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-wrap table th {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1rem 1rem;
+  white-space: nowrap;
+}
+.table-wrap table th:first-child {
+  padding-left: 0;
+}
+
+.table-wrap table a {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+.table-wrap table a:hover {
+  font-weight: bold;
+  color: #0054a6;
+}
+
+.sort-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 0.6rem;
+  transform: translate(-35%, -35%);
+}
+.sort-wrap img {
+  width: 0.7rem;
+  height: auto;
+  cursor: pointer;
+  margin-bottom: 0.2rem;
+}
+.sort-wrap img:last-child {
+  margin-bottom: 0.4rem;
+}
+
+.table-wrap table td {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+.table-wrap table td:first-child {
+  padding-left: 0;
+}
+
+.table-wrap table td,
+th {
+  border-right: 1px solid #969696;
+}
+.table-wrap table td:last-child,
+th:last-child {
+  border-right: none;
+  padding-right: 0.5rem;
+}
+
+.table-wrap table tr {
+  border-bottom: 1px solid #969696;
+}
+.last-row {
+  border-bottom: none !important;
+}
+
+.row-controls {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.delete-btn {
+  height: 1.7rem;
+  border-right: 1px solid #969696;
+  padding-right: 15%;
+  cursor: pointer;
+}
+
+.edit-btn {
+  height: 1.7rem;
+  padding-left: 15%;
+  cursor: pointer;
+}
+
+.pagi-container {
+  margin: 1rem 0 5rem 0;
+}
+
+.pagi-container button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.1;
+  color: #5c5c5c;
+  background-color: transparent;
+  margin-right: 0.5rem;
+  padding: 0 1px 0 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  animation-duration: 1s;
+}
+.pagi-container button:last-child {
+  margin-right: 0;
+}
+
+.pagi-container .active {
+  background-color: #a3a3a3;
+  color: #f5f7fb;
+  border: #a3a3a3 2px solid;
+  border-radius: 2px;
+}

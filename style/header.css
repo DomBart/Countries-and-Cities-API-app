@@ -1,0 +1,21 @@
+.header {
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  padding: 0 20%;
+  height: 5rem;
+  background-color: #0054a6;
+}
+
+.nav a {
+  position: relative;
+}
+
+.nav-logo {
+  position: absolute;
+  height: 40%;
+  top: 25%;
+  margin-bottom: auto;
+}

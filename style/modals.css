@@ -1,0 +1,122 @@
+.add-window,
+.alert-window,
+.confirm-window {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffea;
+}
+
+.add-modal,
+.alert-box,
+.confirm-box {
+  position: absolute;
+  background-color: #ffffff;
+  width: 510px;
+  height: 490px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.add-modal h2,
+.confirm-box h2 {
+  width: 80%;
+  margin: 1.5rem auto 0.8rem auto;
+}
+
+.close-modal {
+  position: absolute;
+  right: 0;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.add-modal form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.add-modal input {
+  color: #969696;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  border: 0.75px solid #969696;
+  border-radius: 7px;
+  padding: 0.6rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+}
+
+.add-modal .add-submit {
+  font-size: 1.2rem;
+  margin: 1.2rem 0 1rem auto;
+  padding: 0.5rem;
+  width: auto;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  cursor: pointer;
+}
+
+.add-modal .add-submit:hover {
+  color: #0054a6;
+}
+.add-modal label {
+  position: relative;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #969696;
+  bottom: -0.6rem;
+  margin-left: 1.5rem;
+  margin-right: auto;
+  padding: 0 5px 0 5px;
+}
+
+.alert-box,
+.confirm-box {
+  height: auto;
+}
+
+.alert-box h2 {
+  margin: 2rem;
+  margin-bottom: 0;
+}
+
+.alert-box button {
+  background-color: #ffffff;
+  color: #969696;
+  font-size: 1.2rem;
+  float: right;
+  padding: 0.25rem 0.5rem;
+  margin: 1rem 3rem 2rem 0;
+  outline: none;
+  cursor: pointer;
+}
+.alert-box button:hover,
+.confirm-box button:hover {
+  color: #0054a6;
+}
+
+.confirm-box span {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.confirm-box span button {
+  background-color: #ffffff;
+  color: #969696;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+}
+.confirm-box span button:first-child {
+  margin-right: 2rem;
+}

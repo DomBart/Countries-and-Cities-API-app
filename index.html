@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teltonika Academy</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/table.css" />
+    <link rel="stylesheet" href="./style/modals.css">
+    <link rel="stylesheet" href="./style/querry.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="nav">
+        <a href="index.html"
+          ><img class="nav-logo" src="./img/logo.svg" alt="Teltonika"
+        /></a>
+      </div>
+    </div>
+    <div class="intro">
+      <span>
+        <h1 id="title">ŠALYS</h1>
+        <button class="shadow" id="addBtn">
+          <img src="./img/add.svg" alt="plus" />
+        </button>
+      </span>
+    </div>
+    <div class="table-container">
+      <div class="table-control">
+        <div class="search-wrap">
+          <input
+            type="text"
+            class="search-bar shadow rounded"
+            id="searchInput"
+          />
+          <img
+            src="./img/search.svg"
+            class="search-icon"
+            id="searchIcon"
+            alt="searchBtn"
+          />
+        </div>
+        <div class="filter-wrap">
+          <button class="table-filter shadow rounded" id="tableFilter">
+            DATA FILTER
+            <img src="./img/filter_tick.svg" class="filter-icon" alt="" />
+          </button>
+          <div class="filter-content rounded shadow" id="filterContent">
+            <label for="dateCheck">Pasirinkite sukūrimo datą</label>
+            <div class="filter-inputs">
+              <input
+                type="checkbox"
+                class="date-check"
+                id="dateCheck"
+                onclick="filterData()"
+              />
+              <input
+                type="date"
+                class="date-input"
+                onchange="filterData()"
+                id="dateInput"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-wrap rounded shadow">
+        <table id="tableData">
+          <tr>
+            <th>
+              PAVADINIMAS<span class="sort-wrap">
+                <img src="./img/sort_asc.svg" id="sortAsc" alt="tick up" />
+                <img src="./img/sort_dsc.svg" id="sortDsc" alt="tick down" />
+              </span>
+            </th>
+            <th>UŽIMAMAS PLOTAS</th>
+            <th>GYVENTOJŲ SKAIČIUS</th>
+            <th>ŠALIES TEL. KODAS</th>
+            <th>VEIKSMAI</th>
+          </tr>
+        </table>
+      </div>
+      <div class="pagi-container">
+        <div id="pagiWrap"></div>
+      </div>
+    </div>
+    <div class="add-window disabled" id="addModal">
+      <div class="add-modal rounded shadow">
+        <img
+          src="./img/close.svg"
+          class="close-modal"
+          alt="Cross"
+          id="closeModal">
+        </object>
+        <h2 id="modalTitle"></h2>
+        <form id="modalForm">
+          <label for="inputName">Pavadinimas</label>
+          <input
+            type="text"
+            id="inputName"
+            maxlength="100"
+            onkeypress="return /[a-ž]/i.test(event.key)"
+            required
+          />
+          <label for="inputArea">Užimamas plotas</label>
+          <input type="number" id="inputArea" min="0" max="100000000" required />
+          <label for="inputPopulation">Gyventojų skaičius</label>
+          <input
+            type="number"
+            id="inputPopulation"
+            min="0"
+            max="100000000000"
+            required
+          />
+          <label for="inputCode">Šalies Tel. kodas</label>
+          <input
+            type="text"
+            id="inputCode"
+            maxlength="10"
+            onkeypress="return /[0-9+]/i.test(event.key)"
+            required
+          />
+          <input
+            type="submit"
+            class="add-submit rounded shadow"
+            value="SAUGOTI"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="alert-window disabled">
+        <div class="alert-box shadow rounded">
+           <h2 id="alertText">ALERT TEXT</h2>
+           <button class="rounded shadow" id="alertBtn">OK</button>
+        </div>
+    </div>
+    <div class="confirm-window disabled">
+      <div class="confirm-box shadow rounded">
+         <h2>AR TIKRAI NORITE PAŠALINTI ĮRAŠĄ?</h2>
+         <span>
+          <button class="rounded shadow" id="cnfrmBtnTrue">TAIP</button>
+          <button class="rounded shadow" id="cnfrmBtnFalse">NE</button>
+         </span>
+      </div>
+  </div>
+    <script src="./src/globalVariables.js"></script>
+    <script src="./src/tableControl.js"></script>
+    <script src="./src/getCountries.js"></script>
+  </body>
+</html>
