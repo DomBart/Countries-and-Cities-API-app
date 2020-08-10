@@ -286,6 +286,18 @@ alertBtn.addEventListener("click", function () {
   alertWindow.classList.add("disabled");
 });
 
+addName.addEventListener("keydown", function (e) {
+  if (addName.value.length === 0 && e.which === 32) {
+    e.preventDefault();
+  }
+});
+
+addCode.addEventListener("keydown", function (e) {
+  if (addCode.value.length === 0 && e.which === 32) {
+    e.preventDefault();
+  }
+});
+
 //"Hover" efektai
 
 addDataBtn.addEventListener("mouseover", function () {
