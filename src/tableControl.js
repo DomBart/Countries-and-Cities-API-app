@@ -110,7 +110,10 @@ function filterData() {
     drawPagination(1, format);
     getData(drawTable);
     filterBtn.style.boxShadow = "0px 0px 10px #0054A68a";
-  } else if (checkbox.checked == false && dateInput.value != "") {
+  } else if (
+    (checkbox.checked == false && dateInput.value != "") ||
+    (checkbox.checked == true && dateInput.value == "")
+  ) {
     currentPage = 1;
     date = "";
     clearPagination();
